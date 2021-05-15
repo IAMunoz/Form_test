@@ -1,0 +1,8 @@
+<h1>Random Word (attempt #{{request.session.counter}})</h1>
+<div>
+    {{random}}
+</div>
+<form action="./generate" method="post">
+    {% csrf_token %}
+    <button type="submit">Generate</button>
+  </form>
